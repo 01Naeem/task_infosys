@@ -14,7 +14,7 @@ body {
 }
 .hero .navbar nav {
   color: white;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   display: flex;
   padding-top: 40px;
@@ -30,7 +30,6 @@ body {
   text-align: center;
   gap: 50px;
   padding-left: 15px;
-  padding-right: 15px;
   list-style: none;
 }
 .hero .navbar nav ul li a {
@@ -78,4 +77,61 @@ body {
   color: #ffffff;
   border-color: black;
   cursor: pointer;
+}
+
+#click {
+  display: none;
+}
+
+/*------>  Medea Querry <------*/
+@media screen and (max-width: 770px) {
+  .hero .FTMoneyMachine h1 {
+    font-size: 40px;
+    padding-left: 80px;
+    margin-top: 100px;
+    line-height: 55px;
+  }
+  .hero .navbar nav {
+    justify-content: space-between;
+  }
+  .hero .navbar nav .search_icon {
+    padding-left: 220px;
+  }
+  .hero .navbar nav .bars {
+    margin-right: 50px;
+  }
+  .hero .navbar nav img {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .hero .navbar nav ul {
+    display: none;
+  }
+  .hero .hero_button {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero .FTMoneyMachine h1 {
+    font-size: 30px;
+    padding-left: 50px;
+    margin-top: 50px;
+    line-height: 50px;
+  }
+  .hero .navbar nav {
+    justify-content: space-between;
+  }
+  .hero .navbar nav .search_icon {
+    padding-left: 80px;
+  }
+  .hero .navbar nav .bars {
+    margin-right: 15px;
+  }
+  .hero .navbar nav img {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .hero .hero_button {
+    margin-left: 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
