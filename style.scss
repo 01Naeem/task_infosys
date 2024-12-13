@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'Montserrat', 'Poppins', 'Arial', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .hero {
     background-image: url("/images/ft-money-machine-lead.avif");
@@ -63,23 +63,24 @@ body {
         }
     }
     .hero_button {
-        border: 1px solid white;
-        color: white;
-        padding: 10px 50px;
-        width: max-content;
-        margin-left: 120px;
-        transition: 0.4s ease-in-out;
-        font-size: 20px;
         a {
-            color: white;
             text-decoration: none;
+            border: 1px solid white;
+            color: white;
+            padding: 10px 50px;
+            width: max-content;
+            margin-left: 120px;
+            transition: 0.4s ease-in-out;
+            font-size: 20px;
         }
     }
     .hero_button:hover {
-        background-color: black;
-        color: #ffffff;
-        border-color: black;
-        cursor: pointer;
+        a {
+            background-color: white;
+            color: rgb(40, 38, 38);
+            border-color: rgba(51, 51, 51, 0);
+            cursor: pointer;
+        }
     }
 }
 #click {
@@ -95,22 +96,78 @@ body {
     border: 20px solid #a86710;
     color: white;
     .coreCapabilities_exlore {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            font-size: 55px;
+            font-weight: normal;
+        }
+        a {
+            max-width: fit-content;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            padding: 8px 40px;
+            border: 1.5px solid white;
+            transition: 0.5s ease-in-out;
+            &:hover {
+                background-color: white;
+                color: #a86710;
+                border-color: #a86710;
+            }
+        }
+        h3 {
+            font-size: 25px;
+            padding: 0px 20px 0px 0px;
+        }
+        span {
+            padding: 10px 0px;
+            color: lightgray;
+            font-size: 20px;
+        }
         .caseStudies_view {
+            .caseStudies_view_button {
+                margin: 10px 25px 0px 0px;
+                width: 350px;
+                a {
+                    font-size: 17px;
+                    color: white;
+                    text-decoration: none;
+                    padding: 4px 10px;
+                    transition: .5s ease-in-out;
+                    &:hover {
+                        background-color: white;
+                        color: #fbad47;
+                        border-color: #fbad47;
+                    }
+                }
+            }
             display: flex;
             gap: 50px;
         }
     }
     .coreCapabilities_image {
         img {
-            width: 600px;
+            max-width: 100%;
             height: 500px;
         }
     }
 }
 
+.colorlive {
+    flex-direction: row-reverse;
+    background-color: rgb(49, 114, 188);
+    border: rgb(49, 114, 188);
+}
+.colorlive_second {
+    background-color: rgb(171, 74, 171);
+    border-color: rgb(171, 74, 171);
+}
+
 /*------>  Medea Querry <------*/
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1200px) {
     .hero {
         .FTMoneyMachine {
             h1 {
@@ -134,23 +191,44 @@ body {
                 padding-right: 0px;
             }
             ul {
-                    display: none;
+                display: none;
             }
             }
         }
         .hero_button{
-            margin-left: 80px;
+            a {
+                margin-left: 80px;
+            }
         }
     }
     .coreCapabilities{
+        height: 100%;
         flex-direction: column-reverse;
+        .coreCapabilities_image {
+            img {
+                max-width: 100%;
+                height: 100%;
+            }
+        }
     }
 }
+@media screen and (max-width: 830px) {
+    .coreCapabilities {
+        .coreCapabilities_exlore {
+            .caseStudies_view {
+                .caseStudies_view_button {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 600px) {
     .hero {
         .FTMoneyMachine {
             h1 {
-                font-size: 30px;
+                font-size: 28px;
                 padding-left: 50px;
                 margin-top: 50px;
                 line-height: 50px;
@@ -172,19 +250,41 @@ body {
             }
         }
         .hero_button{
-            margin-left: 50px;
+           a {
+             margin-left: 50px;
+           }
         }
     }
     .coreCapabilities{
         .coreCapabilities_exlore {
             .caseStudies_view {
                 flex-direction: column;
+                .caseStudies_view_button {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    width: 100%;
+                }
             }
         }
         .coreCapabilities_image {
             img {
                 width: 100%;
                 height: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 376px) {
+    .coreCapabilities{
+        .coreCapabilities_exlore {
+            h1 {
+                font-size: 35px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            span {
+                font-size: 18px;
             }
         }
     }
