@@ -86,6 +86,28 @@ body {
     display: none;
 }
 
+.coreCapabilities {
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #a86710;
+    border: 20px solid #a86710;
+    color: white;
+    .coreCapabilities_exlore {
+        .caseStudies_view {
+            display: flex;
+            gap: 50px;
+        }
+    }
+    .coreCapabilities_image {
+        img {
+            width: 600px;
+            height: 500px;
+        }
+    }
+}
+
 /*------>  Medea Querry <------*/
 
 @media screen and (max-width: 770px) {
@@ -120,6 +142,9 @@ body {
             margin-left: 80px;
         }
     }
+    .coreCapabilities{
+        flex-direction: column-reverse;
+    }
 }
 @media screen and (max-width: 600px) {
     .hero {
@@ -148,6 +173,19 @@ body {
         }
         .hero_button{
             margin-left: 50px;
+        }
+    }
+    .coreCapabilities{
+        .coreCapabilities_exlore {
+            .caseStudies_view {
+                flex-direction: column;
+            }
+        }
+        .coreCapabilities_image {
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
     }
 }
