@@ -21,6 +21,8 @@ body {
                 width: 80px;
                 padding: 10px;
                 padding-right: 100px;
+                position:fixed;
+                left: 180px;
             }
             ul {
                 display: flex;
@@ -40,6 +42,8 @@ body {
                 cursor: pointer;
                 font-size: 20px;
                 font-weight: lighter;
+                position: fixed;
+                right: 110px;
             }
             .bars {
                 padding: 10px 11px;
@@ -47,6 +51,8 @@ body {
                 background-color: white;
                 color: black;
                 border-radius: 50px;
+                position: fixed;
+                right: 20px;
             }
         }
     }
@@ -96,7 +102,7 @@ body {
     border: 20px solid #a86710;
     color: white;
     .coreCapabilities_exlore {
-        margin-left: 20px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         h1 {
@@ -159,6 +165,7 @@ body {
     flex-direction: row-reverse;
     background-color: rgb(49, 114, 188);
     border: rgb(49, 114, 188);
+    padding: 20px;
 }
 .colorlive_second {
     background-color: rgb(171, 74, 171);
@@ -184,11 +191,12 @@ body {
                 padding-left: 220px;
             }
             .bars{
-                margin-right: 50px;
+                right: 30px;
             }
             img {
                 padding-left: 20px;
                 padding-right: 0px;
+                left: 120px;
             }
             ul {
                 display: none;
@@ -215,12 +223,30 @@ body {
 @media screen and (max-width: 830px) {
     .coreCapabilities {
         .coreCapabilities_exlore {
+            width: 100%;
             .caseStudies_view {
                 .caseStudies_view_button {
                     width: 300px;
                 }
             }
         }
+    }
+    .hero {
+        .navbar {
+            nav {
+            .search_icon{
+                padding-left: 0px;
+                right: 120px;
+            }
+            .bars{
+                right: 20px;
+            }
+            img {
+                left: 50px;
+            }
+            }
+        }
+        
     }
 }
 
@@ -239,13 +265,17 @@ body {
             justify-content: space-between;
             .search_icon{
                 padding-left: 80px;
+                right: 100px;
             }
             .bars{
                 margin-right: 15px;
+                right: 10px;
+
             }
             img {
                 padding-left: 20px;
                 padding-right: 0px;
+                left: 40px;
             }
             }
         }
@@ -275,6 +305,24 @@ body {
     }
 } 
 @media screen and (max-width: 420px) {
+    .hero {
+        .navbar {
+            nav {
+            .search_icon{
+                padding-left: 80px;
+                right: 90px;
+            }
+            .bars{
+                margin-right: 15px;
+                right: 5px;
+
+            }
+            img {
+                left: 10px;
+            }
+            }
+        }
+    }
     .coreCapabilities{
         .coreCapabilities_exlore {
             h1 {

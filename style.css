@@ -23,6 +23,8 @@ body {
   width: 80px;
   padding: 10px;
   padding-right: 100px;
+  position: fixed;
+  left: 180px;
 }
 .hero .navbar nav ul {
   display: flex;
@@ -40,6 +42,8 @@ body {
   cursor: pointer;
   font-size: 20px;
   font-weight: lighter;
+  position: fixed;
+  right: 110px;
 }
 .hero .navbar nav .bars {
   padding: 10px 11px;
@@ -47,6 +51,8 @@ body {
   background-color: white;
   color: black;
   border-radius: 50px;
+  position: fixed;
+  right: 20px;
 }
 .hero .FTMoneyMachine h1 {
   color: white;
@@ -90,7 +96,7 @@ body {
   color: white;
 }
 .coreCapabilities .coreCapabilities_exlore {
-  margin-left: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -151,6 +157,7 @@ body {
   flex-direction: row-reverse;
   background-color: rgb(49, 114, 188);
   border: rgb(49, 114, 188);
+  padding: 20px;
 }
 
 .colorlive_second {
@@ -173,11 +180,12 @@ body {
     padding-left: 220px;
   }
   .hero .navbar nav .bars {
-    margin-right: 50px;
+    right: 30px;
   }
   .hero .navbar nav img {
     padding-left: 20px;
     padding-right: 0px;
+    left: 120px;
   }
   .hero .navbar nav ul {
     display: none;
@@ -195,8 +203,21 @@ body {
   }
 }
 @media screen and (max-width: 830px) {
+  .coreCapabilities .coreCapabilities_exlore {
+    width: 100%;
+  }
   .coreCapabilities .coreCapabilities_exlore .caseStudies_view .caseStudies_view_button {
     width: 300px;
+  }
+  .hero .navbar nav .search_icon {
+    padding-left: 0px;
+    right: 120px;
+  }
+  .hero .navbar nav .bars {
+    right: 20px;
+  }
+  .hero .navbar nav img {
+    left: 50px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -211,13 +232,16 @@ body {
   }
   .hero .navbar nav .search_icon {
     padding-left: 80px;
+    right: 100px;
   }
   .hero .navbar nav .bars {
     margin-right: 15px;
+    right: 10px;
   }
   .hero .navbar nav img {
     padding-left: 20px;
     padding-right: 0px;
+    left: 40px;
   }
   .hero .hero_button a {
     margin-left: 50px;
@@ -236,6 +260,17 @@ body {
   }
 }
 @media screen and (max-width: 420px) {
+  .hero .navbar nav .search_icon {
+    padding-left: 80px;
+    right: 90px;
+  }
+  .hero .navbar nav .bars {
+    margin-right: 15px;
+    right: 5px;
+  }
+  .hero .navbar nav img {
+    left: 10px;
+  }
   .coreCapabilities .coreCapabilities_exlore h1 {
     font-size: 35px;
   }
